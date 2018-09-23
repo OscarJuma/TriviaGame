@@ -1,11 +1,11 @@
 var triviaQuestions = [{
-	question: "Name the state! Everything is bigger",
+	question: "Lone Star State",
 	answerChoices: ["California", "Texas", "Louisiana", "Mexico"],
 	answer: 1
 },{
-	question: "Name the state! Everything is bigger",
-	answerChoices: ["California", "Texas", "Louisiana", "Mexico"],
-    answer: 1
+	question: "Show me State",
+	answerChoices: ["Michigan", "Arkansas", "Missouri", "Japan"],
+    answer: 2
 },{
 	question: "Name the state! Everything is bigger",
 	answerChoices: ["California", "Texas", "Louisiana", "Mexico"],
@@ -234,7 +234,7 @@ function newGame(){
 function newQuestion(){
 	$('#message').empty();
 	$('#correctAns').empty();
-	$('#gif').empty();
+	$('#map').empty();
 	answered = true;
 	
 	//sets up new questions & answerChoices
@@ -281,7 +281,7 @@ function answerPage(){
 
 	var rightAnswerText = triviaQuestions[currentQuestion].answerChoices[triviaQuestions[currentQuestion].answer];
 	var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
-	$('#img').html('<img src = "assets/images/'+ imgArray[currentQuestion] +'.img" width = "350px">');
+	$('#map').html('<img src = "assets/images/'+ mapArray[currentQuestion] +'.map" width = "350px">');
 	//checks to see correct, incorrect, or unanswered
 	if((userSelect == rightAnswerIndex) && (answered == true)){
 		correctAnswers++;
@@ -309,7 +309,7 @@ function scoreboard(){
 	$('#timeLeft').empty();
 	$('#message').empty();
 	$('#correctAns').empty();
-	$('#gif').empty();
+	$('#map').empty();
 
 	$('#finalMessage').html(messages.finished);
 	$('#correctAnswers').html("Correct Answers: " + correctAns);

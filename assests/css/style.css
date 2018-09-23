@@ -40,8 +40,8 @@ h2, #message, #finalMessage{
 	padding: 10px;
 }
 
-#img{
-	margin: 30px;
+#map{
+	margin: 25px;
 }
 
 @media screen and (max-width:640px){
