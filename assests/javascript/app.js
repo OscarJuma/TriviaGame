@@ -238,7 +238,7 @@ function newQuestion(){
 	answered = true;
 	
 	//sets up new questions & answerChoices
-	$('#currentQuestion').html('Question Number:'+(currentQuestion+1)+' '+'of'+' '+triviaQuestions.length);
+	$('#currentQuestion').html('Question Number:'+' '+(currentQuestion+1)+' '+'of'+' '+triviaQuestions.length);
 	$('.question').html('<h2>' + triviaQuestions[currentQuestion].question + '</h2>');
 	for(var i = 0; i < 4; i++){
 		var choices = $('<div>');
