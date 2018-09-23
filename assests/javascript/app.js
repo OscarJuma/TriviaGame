@@ -3,16 +3,16 @@ var triviaQuestions = [{
 	answerChoices: ["California", "Texas", "Louisiana", "Mexico"],
 	answer: 1
 },{
+	question: "Heart of Dixie",
+	answerChoices: ["Alabama", "Texas", "North Carolina", "Mississippi"],
+    answer: 0
+},{
+	question: "The Last Frontier",
+	answerChoices: ["California", "Texas", "Louisiana", "Alaska"],
+    answer: 3
+},{
 	question: "Show me State",
-	answerChoices: ["Michigan", "Arkansas", "Missouri", "Japan"],
-    answer: 2
-},{
-	question: "Name the state! Everything is bigger",
-	answerChoices: ["California", "Texas", "Louisiana", "Mexico"],
-    answer: 1
-},{
-	question: "Name the state! Everything is bigger",
-	answerChoices: ["California", "Texas", "Louisiana", "Mexico"],
+	answerChoices: ["California", "Missouri", "Louisiana", "Mexico"],
     answer: 1
 },{
 	question: "Name the state! Everything is bigger",
