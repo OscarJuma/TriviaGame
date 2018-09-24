@@ -275,13 +275,15 @@ function showCountdown(){
 }
 
 function answerPage(){
-	$('#currentQuestion').empty();
-	$('.thisChoice').empty(); //Clears question page
+    $('#currentQuestion').empty();
+    //Clears question page
+	$('.thisChoice').empty(); 
 	$('.question').empty();
 
 	var rightAnswerText = triviaQuestions[currentQuestion].answerChoices[triviaQuestions[currentQuestion].answer];
-	var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
-	$('#map').html('<img src = "assets/images/'+ mapArray[currentQuestion] +'.map" width = "350px">');
+    //map for the right answer
+    var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
+	$('#map').html('<img src = "assets/images/'+ mapArray[currentQuestion] +'.jpg" width = "350px">');
 	//checks to see correct, incorrect, or unanswered
 	if((userSelect == rightAnswerIndex) && (answered == true)){
 		correctAnswers++;
