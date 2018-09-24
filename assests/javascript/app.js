@@ -298,10 +298,10 @@ function answerPage(){
 	}
 	
 	if(currentQuestion == (triviaQuestions.length-1)){
-		setTimeout(scoreboard, 5000)
+		setTimeout(scoreboard, 2000)
 	} else{
 		currentQuestion++;
-		setTimeout(newQuestion, 5000);
+		setTimeout(newQuestion, 2000);
 	}	
 }
 
